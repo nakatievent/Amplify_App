@@ -41,7 +41,7 @@ export function DynamoDB () {
 
     try {
       const todoDetails = {
-        owner: '37744ac8-7001-70b3-dd78-ea8dd01b5903',
+        // owner: '37744ac8-7001-70b3-dd78-ea8dd01b5903',
         title,
         description
       }
