@@ -3,4 +3,5 @@ type Todo
   @auth(rules: [{ allow: public, operations: [read] }, { allow: owner }]) {
   title: String!
   description: String
+  image: String
 }

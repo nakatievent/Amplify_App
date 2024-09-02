@@ -7,12 +7,14 @@ export const onCreateTodo = /* GraphQL */ `
     $owner: String
   ) {
     onCreateTodo(filter: $filter, owner: $owner) {
-      owner
       title
       description
+      image
       id
       createdAt
       updatedAt
+      owner
+      __typename
     }
   }
 `;
@@ -22,12 +24,14 @@ export const onUpdateTodo = /* GraphQL */ `
     $owner: String
   ) {
     onUpdateTodo(filter: $filter, owner: $owner) {
-      owner
       title
       description
+      image
       id
       createdAt
       updatedAt
+      owner
+      __typename
     }
   }
 `;
@@ -37,12 +41,14 @@ export const onDeleteTodo = /* GraphQL */ `
     $owner: String
   ) {
     onDeleteTodo(filter: $filter, owner: $owner) {
-      owner
       title
       description
+      image
       id
       createdAt
       updatedAt
+      owner
+      __typename
     }
   }
 `;

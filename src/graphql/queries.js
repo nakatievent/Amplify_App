@@ -4,12 +4,14 @@
 export const getTodo = /* GraphQL */ `
   query GetTodo($id: ID!) {
     getTodo(id: $id) {
-      owner
       title
       description
+      image
       id
       createdAt
       updatedAt
+      owner
+      __typename
     }
   }
 `;
@@ -21,14 +23,17 @@ export const listTodos = /* GraphQL */ `
   ) {
     listTodos(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
-        owner
         title
         description
+        image
         id
         createdAt
         updatedAt
+        owner
+        __typename
       }
       nextToken
+      __typename
     }
   }
 `;
